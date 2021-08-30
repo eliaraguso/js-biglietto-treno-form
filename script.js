@@ -1,5 +1,6 @@
 // 1. Seleziono i bottoni
 var btnGenera = document.getElementById("genera");
+var btnAnnulla = document.getElementById("annulla");
 
 // 2. al click del bottone genera
 btnGenera.addEventListener("click",
@@ -36,17 +37,40 @@ btnGenera.addEventListener("click",
         // 5a. inietto il nome del passeggero
         document.getElementById("nome-passeggero").innerHTML = nome;
         
-        // // 5b. inietto il tipo di offerta
-        // document.getElementById("offerta").innerHTML = ;
+        // 5b. inietto il tipo di offerta
+        if (fasciaEta == "minorenne") {
+            document.getElementById("offerta").innerHTML = "Biglietto U18 -20% di sconto";
+        } else if (fasciaEta == "maggiorenne") {
+            document.getElementById("offerta").innerHTML = "Biglietto standard";
+        } else {
+            document.getElementById("offerta").innerHTML = "Biglietto Over 65 -40% di sconto";
+        }
+        
 
         // 5c. inietto il prezzo
         document.getElementById("prezzo-biglietto").innerHTML = prezzoFinale;
 
-        // // 5d. inietto il numero della carrozza
-        // document.getElementById("carrozza").innerHTML = ;
+        // 5d. inietto il numero della carrozza
+        document.getElementById("carrozza").innerHTML = Math.floor(Math.random() * 20) + 1;
 
-        // // 5e. inietto il codice prenotazione CP
-        // document.getElementById("codice-prenotazione").innerHTML = ;
+        // 5e. inietto il codice prenotazione CP
+        document.getElementById("codice-prenotazione").innerHTML = Math.floor(Math.random() * 9999);
+
+        // mostro il biglieto
+        document.getElementById("biglietto").classList.add("open");
+    }
+);
+
+// al click del bottone annulla
+btnAnnulla.addEventListener("click",
+    function() {
+        // nascondo il biglietto
+        document.getElementById("biglietto").classList.remove("open");
+
+        // reset di tutti i campi
+        document.getElementById("nome").value = "";
+        document.getElementById("chilometri").value = "";
+        document.getElementById("eta").value = "";
 
     }
 );
