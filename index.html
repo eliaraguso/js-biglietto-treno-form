@@ -5,10 +5,68 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biglietto del treno form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div class="container">
+        <h2>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
+        <div class="dati flex wrap">
+            <div class="dati-top flex">
+                <div class="nome-cognome">
+                    <form>
+                        <label for="nome">Nome Cognome</label>
+                        <input type="text" name="nome" id="nome" placeholder="Inserisci il tuo nome e cognome">
+                    </form>
+                </div>
+                <div class="chilometri">
+                    <form>
+                        <label for="chilometri">Km da percorrere</label>
+                        <input type="number" name="chilometri" id="chilometri" placeholder="Inserisci i Km" >
+                    </form>
+                </div>
+                <div class="eta">
+                    <form>
+                        <label for="eta">Fascia d'età</label>
+                        <select id="eta" name="eta">
+                            <option value="maggiorenne">Maggiorenne</option>
+                            <option value="minorenne">Minorenne</option>
+                            <option value="over">Over 65</option>
+                          </select>
+                    </form>
+                </div>
+            </div>
+            <div class="dati-bottom">
+                <button class="genera">Genera</button>
+                <button class="annulla">Annulla</button>
+            </div>
+        </div>
+        <h2>IL TUO BIGLIETTO</h2>
+        <div class="biglietto">
+            <h3>DETTAGLIO PASSEGGERI</h3>
+            <div class="dettagli flex">
+                <div id="nome-passeggero">
+                    elia
+                </div>
+                <div id="offerta">
+                    bigl standard
+                </div>
+                <div id="carrozza">
+                    5
+                </div>
+                <div id="codice-prenotazione">
+                    32423
+                </div>
+                <div id="costo-biglietto">
+                    2,10$
+                </div>
+
+            </div>
+        </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>

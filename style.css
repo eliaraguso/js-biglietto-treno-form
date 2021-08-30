@@ -7,5 +7,58 @@
 
 /* Common */
 body {
-    background-color: lightcoral;
+    background-color: coral;
+    font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+    color: white;
+    margin: 20px 0;
+}
+
+.flex {
+    display: flex;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+
+.dati-top,
+.dati-bottom {
+    width: 100%;
+    padding: 10px 0;
+}
+
+.dati-top {
+    justify-content: space-evenly;
+}
+
+
+
+
+
+.container {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.dati,
+.biglietto {
+    background-color: white;
+}
+
+h3 {
+    text-align: start;
+}
+
+.dettagli {
+    justify-content: space-evenly;
+    padding-top: 20px;
+}
+
+.biglietto {
+    padding: 20px 0;
 }
