@@ -48,7 +48,7 @@ btnGenera.addEventListener("click",
         
 
         // 5c. inietto il prezzo
-        document.getElementById("prezzo-biglietto").innerHTML = prezzoFinale;
+        document.getElementById("prezzo-biglietto").innerHTML = prezzoFinale + " " + "€";
 
         // 5d. inietto il numero della carrozza
         document.getElementById("carrozza").innerHTML = Math.floor(Math.random() * 20) + 1;
