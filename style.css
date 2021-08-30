@@ -35,6 +35,9 @@ h2 {
     justify-content: space-evenly;
 }
 
+label{
+    display: block;
+}
 
 
 
@@ -62,3 +65,4 @@ h3 {
 .biglietto {
     padding: 20px 0;
 }
+
