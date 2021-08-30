@@ -26,11 +26,11 @@ btnGenera.addEventListener("click",
 
         // 4d controllo l'ètà dell'utente e calcolo il prezzo del biglietto
         if (fasciaEta == "minorenne") {
-            prezzoFinale = prezzoMinorenni;
+            prezzoFinale = prezzoMinorenni.toFixed;
         } else if (fasciaEta == "maggiorenne") {
-            prezzoFinale = prezzoStandard;
+            prezzoFinale = prezzoStandard.toFixed;
         } else {
-            prezzoFinale = prezzoOver65;
+            prezzoFinale = prezzoOver65.toFixed;
         }
         
         // 5. stampo tutti i dati nei div del biglietto
